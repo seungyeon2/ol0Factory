@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 올영 팩토리</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <header>
+            <div class="logo-area">
+                <img src="images/image.png" alt="OLIVE YOUNG" onerror="this.style.display='none'; document.querySelector('.logo-text').style.display='block';">
+                <h1 class="logo-text" style="display:none; color:#83b938;">OLIVE YOUNG</h1>
+            </div>
+            <div class="status-bar">
+                <div class="energy-box">
+                    <i class="fas fa-bolt"></i>
+                    <span id="energy-display">100/100</span>
+                </div>
+                <div class="point-box">
+                    <span>P</span>
+                    <span id="point-display">0</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="order-panel">
+            <div class="character">
+                <div class="bubble">이거 만들어줘!</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="올리">
+            </div>
+            <div class="order-card">
+                <h3>NEW ORDER</h3>
+                <div class="target-item-preview" id="order-target">
+                    </div>
+                <div class="reward-info">
+                    <span>보상: </span>
+                    <strong style="color: #ff6b6b;">+50P</strong>
+                </div>
+                <button id="submit-order-btn" disabled>납품하기</button>
+            </div>
+        </section>
+
+        <main class="board-container">
+            <div class="grid" id="game-grid">
+                </div>
+        </main>
+
+        <footer class="controls">
+            <div class="spawner" id="spawner-box">
+                <div class="box-lid"></div>
+                <span>TAP!</span>
+                <small>에너지 -1</small>
+            </div>
+            <div class="menu-btn" onclick="alert('친구 초대하면 에너지 +100! (준비중)')">
+                <i class="fas fa-user-plus"></i><br>초대
+            </div>
+            <div class="menu-btn shop-btn" onclick="alert('모은 포인트로 실제 상품 교환 가능! (준비중)')">
+                <i class="fas fa-gift"></i><br>교환소
+            </div>
+        </footer>
+    </div>
+
+    <div id="daily-modal" class="modal">
+        <div class="modal-content">
+            <h2>✨ 매일 출석 보상 ✨</h2>
+            <p>오늘도 올영 팩토리에 오셨네요!</p>
+            <div class="reward-icon">⚡ +50</div>
+            <button onclick="closeModal()">받기</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
