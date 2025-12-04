@@ -6,17 +6,17 @@ const MAX_ENERGY = 100;
 const ITEMS = {
     moisture: [
         { level: 1, name: '물방울', icon: '💧', image: null },
-        { level: 2, name: '스킨', icon: '🧴', image: 'images/토너-removebg-preview.png' }, // 대체: 스킨 이미지 미존재 → 토너 사용
-        { level: 3, name: '크림', icon: '🥣', image: 'images/크림-removebg-preview.png' },
-        { level: 4, name: '마스크팩', icon: '🎭', image: 'images/마스크팩-removebg-preview.png' },
-        { level: 5, name: '앰플', icon: '🧪', image: 'images/앰플-removebg-preview.png' } // Max
+        { level: 2, name: '스킨', icon: '🧴', image: './images/토너-removebg-preview.png' }, // 대체: 스킨 이미지 미존재 → 토너 사용
+        { level: 3, name: '크림', icon: '🥣', image: './images/크림-removebg-preview.png' },
+        { level: 4, name: '마스크팩', icon: '🎭', image: './images/마스크팩-removebg-preview.png' },
+        { level: 5, name: '앰플', icon: '🧪', image: './images/앰플-removebg-preview.png' } // Max
     ],
     makeup: [
         { level: 1, name: '빨간가루', icon: '✨', image: null },
         { level: 2, name: '빨간물약', icon: '🍷', image: null },
-        { level: 3, name: '틴트', icon: '💄', image: 'images/틴트-removebg-preview.png' },
-        { level: 4, name: '립밤', icon: '💋', image: 'images/립밤-removebg-preview.png' },
-        { level: 5, name: '립스틱', icon: '👄', image: 'images/립스틱-removebg-preview.png' } // Max
+        { level: 3, name: '틴트', icon: '💄', image: './images/틴트-removebg-preview.png' },
+        { level: 4, name: '립밤', icon: '💋', image: './images/립밤-removebg-preview.png' },
+        { level: 5, name: '립스틱', icon: '👄', image: './images/립스틱-removebg-preview.png' } // Max
     ]
 };
 
