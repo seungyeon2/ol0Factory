@@ -5,18 +5,20 @@ const MAX_ENERGY = 100;
 // 아이템 정의 (이미지 사용: 폴더 내 파일명을 매핑, 없으면 이모지 대체)
 const ITEMS = {
     moisture: [
-        { level: 1, name: '물방울', icon: '💧', image: null },
-        { level: 2, name: '스킨', icon: '🧴', image: './images/토너-removebg-preview.png' }, // 대체: 스킨 이미지 미존재 → 토너 사용
-        { level: 3, name: '크림', icon: '🥣', image: './images/크림-removebg-preview.png' },
-        { level: 4, name: '마스크팩', icon: '🎭', image: './images/마스크팩-removebg-preview.png' },
-        { level: 5, name: '앰플', icon: '🧪', image: './images/앰플-removebg-preview.png' } // Max
+        // 이미지가 없는 레벨 1은 null로 두면 이모지가 나옵니다.
+        { level: 1, name: '물방울', icon: '💧', image: null }, 
+        { level: 2, name: '스킨', icon: '🧴', image: 'images/토너-removebg-preview.png' },
+        { level: 3, name: '크림', icon: '🥣', image: 'images/크림-removebg-preview.png' },
+        { level: 4, name: '마스크팩', icon: '🎭', image: 'images/마스크팩-removebg-preview.png' },
+        { level: 5, name: '앰플', icon: '🧪', image: 'images/앰플-removebg-preview.png' }
     ],
     makeup: [
+        // 업로드 파일 목록에 가루, 물약 이미지가 없어서 우선 null(이모지)로 둡니다.
         { level: 1, name: '빨간가루', icon: '✨', image: null },
         { level: 2, name: '빨간물약', icon: '🍷', image: null },
-        { level: 3, name: '틴트', icon: '💄', image: './images/틴트-removebg-preview.png' },
-        { level: 4, name: '립밤', icon: '💋', image: './images/립밤-removebg-preview.png' },
-        { level: 5, name: '립스틱', icon: '👄', image: './images/립스틱-removebg-preview.png' } // Max
+        { level: 3, name: '틴트', icon: '💄', image: 'images/틴트-removebg-preview.png' },
+        { level: 4, name: '립밤', icon: '💋', image: 'images/립밤-removebg-preview.png' },
+        { level: 5, name: '립스틱', icon: '👄', image: 'images/립스틱-removebg-preview.png' }
     ]
 };
 
@@ -335,4 +337,5 @@ function closeModal() {
 }
 
 // 게임 시작
+
 init();
